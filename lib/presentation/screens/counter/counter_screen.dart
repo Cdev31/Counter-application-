@@ -25,7 +25,7 @@ class _CounterScreenState extends State<CounterScreen> {
             children:  [
             Text('$counter',
              style: const TextStyle( fontSize: 140, fontWeight: FontWeight.bold )),
-            Text('$counter${ counter == 1 ? '': 's'}', style: const TextStyle( fontSize: 25))
+            Text('Click${ counter < 2 ? '': 's'}', style: const TextStyle( fontSize: 25))
           ],),
         ),
         floatingActionButton: FloatingActionButton( 
@@ -38,4 +38,4 @@ class _CounterScreenState extends State<CounterScreen> {
           ),
       );
   }
-}
+} 
